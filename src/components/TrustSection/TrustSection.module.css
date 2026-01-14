@@ -1,0 +1,45 @@
+.section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.text {
+  font-size: 14px;
+  color: #9aa5b1; /* Light grayish text */
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.logoItem {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.logoItem:hover {
+  opacity: 1;
+}
+
+.logoSvg {
+    height: 35px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+  .logos {
+    gap: 24px;
+    flex-direction: column;
+  }
+}

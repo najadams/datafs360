@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  padding: 80px 0 40px;
+  background-color: var(--white);
+  color: var(--gray-text);
+  font-size: 14px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.brandColumn {
+  flex: 1;
+  min-width: 200px;
+}
+
+.linkColumns {
+  display: flex;
+  gap: 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerLink {
+  color: var(--gray-text);
+  transition: color 0.2s;
+}
+
+.footerLink:hover {
+  color: var(--primary-blue);
+}
+
+.contactColumn {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align to right as per design */
+  text-align: right;
+}
+
+.contactLabel {
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 16px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.socialIcon {
+  color: #666;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  color: var(--primary-blue);
+}
+
+.phoneBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+
+.bottomBar {
+  padding-top: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #ccc;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+  }
+  
+  .contactColumn {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .linkColumns {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}

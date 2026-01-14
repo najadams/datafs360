@@ -1,0 +1,91 @@
+.section {
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0099FF 0%, #0077CC 100%);
+  color: var(--white);
+  overflow: hidden;
+}
+
+/* Optional background pattern overlay can go here */
+.bgPattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    pointer-events: none;
+    /* Insert SVG pattern or image here if desired */
+    background-image: url('data:image/svg+xml,...'); 
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.textContent {
+  flex: 1;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.formContent {
+  flex: 1;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px; /* Slightly squarish as per design */
+  font-size: 14px;
+  color: var(--dark-text);
+  background-color: var(--white);
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  background-color: #171717; /* Very dark/black button */
+  color: var(--white);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .submitBtn {
+    align-self: center;
+  }
+}

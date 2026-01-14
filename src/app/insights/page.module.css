@@ -1,0 +1,24 @@
+.pageHeader {
+  background-color: var(--primary-blue);
+  padding: 0 0 220px; /* Enhanced bottom padding for overlap */
+  color: var(--white);
+}
+
+.headerTitle {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 423px;
+  object-fit: cover;
+  display: block;
+  margin-top: -180px; /* Negative top margin for overlap */
+  border-radius: 8px;
+}
+
+/* Container reset if needed, or just remove the user's custom class if not used */
