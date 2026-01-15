@@ -7,7 +7,6 @@ import styles from './page.module.css';
 export default function Insights() {
     // Placeholder for the hero meeting image
     // Using a different Unsplash image representing "business meeting" or "handshake"
-    // that matches the "Smarter decisions" theme.
     const heroImage = "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2670&auto=format&fit=crop";
 
     return (

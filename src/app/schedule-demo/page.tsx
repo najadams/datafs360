@@ -25,6 +25,7 @@ const ScheduleDemo = () => {
         {/* Hero Form Section */}
         <section className={styles.heroSection}>
           <img src={heroBg} alt="Meeting Background" className={styles.heroImage} />
+          <div className={styles.heroOverlay}></div>
           
           <div className="container" style={{ position: 'relative', height: '100%', display: 'flex', alignItems: 'center' }}>
             <div className={styles.heroContent}>

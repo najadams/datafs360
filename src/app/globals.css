@@ -52,12 +52,12 @@ button {
 .container {
   max-width: 1400px; /* Slight adjustment for comfortable padding */
   margin: 0 auto;
-  padding: 0 80px; /* Standardized desktop padding */
+  padding: 0 80px !important; /* Standardized desktop padding, forced */
   width: 100%;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 20px; /* Mobile padding */
+    padding: 0 20px !important; /* Mobile padding, forced */
   }
 }

@@ -1,6 +1,6 @@
 .pageHeader {
   background-color: var(--primary-blue);
-  padding: 40px 0 120px; /* Enhanced bottom padding for overlap, base padding slightly less than others */
+  padding: 40px 0 220px; /* Enhanced bottom padding for overlap, base padding slightly less than others */
   color: var(--white);
 }
 
@@ -14,8 +14,8 @@
   position: relative;
   width: 100%;
   max-width: 1223px;
-  margin: -80px auto 0; /* Negative top margin for overlap */
-  min-height: 423px; /* Minimum height similar to others */
+  margin: -180px auto 80px; /* Increased overlap and added bottom spacing */
+  min-height: 623px; /* Minimum height similar to others */
   /* Remove fixed height, allow content to dictate, but ensure padding */
   padding: 40px 0;
   background-color: #000;
@@ -32,7 +32,18 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.6;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #192658; /* var(--primary-blue) */
+  opacity: 0.82; /* 82% opacity as requested */
+  z-index: 1;
 }
 
 .heroContent {
