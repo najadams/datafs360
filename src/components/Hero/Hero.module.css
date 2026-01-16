@@ -34,7 +34,7 @@
   position: relative;
   z-index: 2;
   max-width: 800px;
-  margin-top: 250px; /* Adjust vertical position downwards */
+  margin-top: 150px; /* Adjust vertical position downwards */
 }
 
 .headline {
