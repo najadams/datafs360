@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo}>
             {/* SVG Placeholder for DataF360 Logo based on image */}
-            <img src="/DataF360 (Color).png" alt="DataF360" className={styles.logoImage} />
+            <img src="/DataF360 white.svg" alt="DataF360" className={styles.logoImage} />
         </Link>
 
         {/* Desktop Navigation */}

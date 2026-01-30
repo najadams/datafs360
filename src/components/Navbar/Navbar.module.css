@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto; /* Logo - Links - Actions */
   align-items: center;
-  height: 80px;
+  height: 80px; /* Reduced specific height as requested */
   width: 95%;
   max-width: var(--container-width);
   background-color: #E6F4FF; /* Light blue pill background */
@@ -38,14 +38,14 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 54px;
   color: var(--primary-blue);
   /* Adjust SVG or Image sizing here */
   justify-self: start;
 }
 
 .logoImage {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
