@@ -22,12 +22,12 @@
 }
 
 .contentContainer {
-  /* The dashed border container */
-  border: 2px dashed var(--accent-blue);
+  /* Removed dashed border and increased width */
+  border: none;
   margin: 40px auto;
-  padding: 40px;
-  border-radius: 8px; /* Optional slight radius */
-  max-width: 1000px; /* Keep it contained */
+  padding: 0; /* Removing padding to align with container edges if desired, or keep spacing? User said "let content fill up" */
+  width: 100%; /* Ensure it takes full width of parent container */
+  max-width: 100%;
 }
 
 .introSection {
@@ -155,4 +155,10 @@
     border: none;
     padding: 0;
   }
+}
+
+.featureIconImage {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }

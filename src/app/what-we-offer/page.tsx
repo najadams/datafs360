@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import { Play, TrendingUp, Anchor, Tag, FolderOpen, PieChart, Calculator } from 'lucide-react';
 import styles from './page.module.css';
+import { image } from 'framer-motion/client';
 
 const WhatWeOffer = () => {
     const introImage = "/whatweOffer.jpg";
@@ -12,32 +13,38 @@ const WhatWeOffer = () => {
         {
             icon: <TrendingUp size={32} />,
             title: "Find Market Gaps with Import Data",
-            desc: "Spot opportunities before your competitors. See exactly what products are coming into African markets, who is bringing them in, and in what volumes. Track ports of entry, countries of origin, and leading players — giving you the insights to position your business where demand is strong."
+            desc: "Spot opportunities before your competitors. See exactly what products are coming into African markets, who is bringing them in, and in what volumes. Track ports of entry, countries of origin, and leading players — giving you the insights to position your business where demand is strong.",
+            image: "/gaps.png"
         },
         {
             icon: <Anchor size={32} />,
             title: "Expand Globally with Export Data",
-            desc: "Identify the right markets for your products. Understand which goods are being exported, by whom, and to where. Explore historical trends and destination countries to guide your export strategy and connect with buyers abroad."
+            desc: "Identify the right markets for your products. Understand which goods are being exported, by whom, and to where. Explore historical trends and destination countries to guide your export strategy and connect with buyers abroad.",
+            image: "/group.png"
         },
         {
             icon: <Tag size={32} />,
             title: "Set the Right Price with Price Data",
-            desc: "Avoid guesswork when entering a new market. Access wholesale and retail prices for over 1,000 FMCG products to understand local purchasing power, track price fluctuations, and align your brand positioning from budget to premium."
+            desc: "Avoid guesswork when entering a new market. Access wholesale and retail prices for over 1,000 FMCG products to understand local purchasing power, track price fluctuations, and align your brand positioning from budget to premium.",
+            image: "/rightPrice.png"
         },
         {
             icon: <FolderOpen size={32} />,
             title: "Connect Faster with the Company Directory",
-            desc: "Cut through barriers and go straight to decision-makers. Our directory provides verified contacts of C-suite executives and key distributors across industries — enabling quicker B2B partnerships and faster market entry."
+            desc: "Cut through barriers and go straight to decision-makers. Our directory provides verified contacts of C-suite executives and key distributors across industries — enabling quicker B2B partnerships and faster market entry.",
+            image: "/folder.png"
         },
         {
             icon: <PieChart size={32} />,
             title: "See the Big Picture with Macroeconomic Data",
-            desc: "Evaluate opportunities with context. Access indicators like GDP, FDI, interest rates, and inflation to measure market stability, identify growth potential, and make investment decisions with confidence."
+            desc: "Evaluate opportunities with context. Access indicators like GDP, FDI, interest rates, and inflation to measure market stability, identify growth potential, and make investment decisions with confidence.",
+            image: "/bigPic.png"
         },
         {
             icon: <Calculator size={32} />,
             title: "Plan Ahead with the Duty Calculator",
-            desc: "No more surprises at customs. Instantly calculate applicable import duties, VAT, and other charges by simply entering your HS code and CIF value. Know your true landed cost before you ship."
+            desc: "No more surprises at customs. Instantly calculate applicable import duties, VAT, and other charges by simply entering your HS code and CIF value. Know your true landed cost before you ship.",
+            image: "/plan.png"
         }
     ];
 
@@ -106,7 +113,11 @@ const WhatWeOffer = () => {
                             <div key={index} className={styles.featureCard}>
                                 <div className={styles.featureHeader}>
                                     <div className={styles.featureIconWrapper}>
-                                        {feature.icon}
+                                        {feature.image ? (
+                                            <img src={feature.image} alt={feature.title} className={styles.featureIconImage} />
+                                        ) : (
+                                            feature.icon
+                                        )}
                                     </div>
                                     <h3 className={styles.featureTitle}>
                                         {feature.title.split(' with ')[0]}
