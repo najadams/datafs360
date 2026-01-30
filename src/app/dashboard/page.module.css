@@ -1,0 +1,112 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #8bbefa; /* Approximate light blue from mockup */
+    padding: 24px;
+    gap: 24px;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Removed margin-left as sidebar is now flex item */
+}
+
+.scrollableContent {
+    padding: 0 40px 40px;
+}
+
+.welcomeBanner {
+    background: linear-gradient(90deg, #1fa2ff 0%, #12d8fa 100%); /* Placeholder blue gradient */
+    background-image: url('/big-hero.jpg'); /* Using hero as background for texture if needed, or simple gradient */
+    /* Given mockup, it's a solid blue with text. Let's stick to gradient matching the brand */
+    background: linear-gradient(to right, #2b59ff, #2b88ff); 
+    border-radius: 16px;
+    padding: 40px;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+
+.welcomeTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-style: italic;
+    font-family: var(--font-poppins); /* Ensure correct font */
+}
+
+.welcomeText {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 24px;
+    font-style: italic;
+    font-family: var(--font-poppins);
+}
+
+.overviewSection {
+    background: url('/big-hero.jpg') center/cover no-repeat;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+    /* Removed empty ruleset if any */
+}
+
+/* Overlay for overview section to make text readable/blue tint */
+.overviewSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(30, 60, 114, 0.8) 0%, rgba(42, 82, 152, 0.8) 100%);
+    z-index: 1;
+}
+
+.overviewContent {
+    position: relative;
+    z-index: 2;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.newsSection {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.newsTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ccc;
+    margin-bottom: 24px;
+    font-style: italic;
+    font-family: var(--font-poppins);
+}
+
+.articlesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.articlesGrid > div {
+    /* Article card wrapper adjustments if needed */
+}
+
+/* Specific styling for Newsletter at bottom of dashboard? The mockup shows footer. */
+/* Footer is separate component. */
