@@ -12,7 +12,7 @@ interface ArticlesProps {
 const Articles = ({ title = "Articles", count = 3, id = "insights" }: ArticlesProps) => {
   const articles = Array.from({ length: count }, (_, i) => i + 1);
   // Placeholder image showing people/market
-  const articleImage = "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1000&auto=format&fit=crop";
+  const articleImage = "/articles.jpg";
 
   return (
     <section className={styles.section} id={id}>

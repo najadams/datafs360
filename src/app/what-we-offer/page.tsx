@@ -5,7 +5,7 @@ import { Play, TrendingUp, Anchor, Tag, FolderOpen, PieChart, Calculator } from 
 import styles from './page.module.css';
 
 const WhatWeOffer = () => {
-    const introImage = "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2670&auto=format&fit=crop";
+    const introImage = "/whatweOffer.jpg";
     const videoImage = "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2670&auto=format&fit=crop";
 
     const features = [
