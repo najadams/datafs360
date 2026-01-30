@@ -13,7 +13,7 @@ const Footer = () => {
         <div className={styles.brandColumn}>
            <Link href="/">
                 {/* Same logo SVG as Navbar but maybe different size/color if needed */}
-                <img src="/DataF360 (Color).png" alt="DataF360" style={{ height: '40px', width: 'auto' }} />
+                <img src="/DataF360 white.svg" alt="DataF360" style={{ height: '40px', width: 'auto' }} />
             </Link>
         </div>
 
