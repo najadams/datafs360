@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link href="/what-we-offer" className={styles.link}>What We Offer</Link>
           <Link href="/pricing" className={styles.link}>Pricing</Link>
           <Link href="/insights" className={styles.link}>Insights</Link>
-          <Link href="#contact" className={styles.link}>Contact Us</Link>
+          <Link href="/contact" className={styles.link}>Contact Us</Link>
         </nav>
 
         <div className={styles.actionsContainer}>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link href="/what-we-offer" className={styles.mobileLink} onClick={toggleMobileMenu}>What We Offer</Link>
             <Link href="/pricing" className={styles.mobileLink} onClick={toggleMobileMenu}>Pricing</Link>
             <Link href="/insights" className={styles.mobileLink} onClick={toggleMobileMenu}>Insights</Link>
-            <Link href="#contact" className={styles.mobileLink} onClick={toggleMobileMenu}>Contact Us</Link>
+            <Link href="/contact" className={styles.mobileLink} onClick={toggleMobileMenu}>Contact Us</Link>
           </nav>
         </div>
       )}

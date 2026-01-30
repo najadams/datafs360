@@ -9,7 +9,7 @@
   --border-color: #e5e5e5;
   
   /* Layout */
-  --container-width: 1440px; /* Updated reference width */
+  --container-width: 1920px; /* Updated reference width */
   --header-height: 80px;
   
   --foreground: var(--dark-text);
@@ -50,7 +50,7 @@ button {
 
 /* Utility to center content */
 .container {
-  max-width: 1400px; /* Slight adjustment for comfortable padding */
+  max-width: 1920px; /* Increased for wider layout on large screens */
   margin: 0 auto;
   padding: 0 80px !important; /* Standardized desktop padding, forced */
   width: 100%;
