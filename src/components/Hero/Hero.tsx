@@ -5,7 +5,7 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
     // Using a placeholder image that matches the "business/office" vibe
-  const bgImage = "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop";
+  const bgImage = "/big-hero.jpg";
 
   return (
     <section className={styles.hero}>

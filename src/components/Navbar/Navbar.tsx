@@ -5,8 +5,12 @@ import Link from 'next/link';
 import { UserCircle, Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
+import { usePathname } from 'next/navigation';
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
   
   // Mock user state - set to true to test logged in view, false for logged out
   // In a real app, this would come from an auth context or hook
@@ -18,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${!isHomePage ? styles.violetHeader : ''}`}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo}>
             {/* SVG Placeholder for DataF360 Logo based on image */}

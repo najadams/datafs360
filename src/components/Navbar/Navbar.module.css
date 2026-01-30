@@ -13,6 +13,14 @@
   border: none;
 }
 
+.violetHeader {
+  background-color: var(--primary-blue);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  top: 0; 
+  padding: 24px 0; /* Adds top/bottom spacing so pill isn't flush */
+}
+
 .navContainer {
   display: grid;
   grid-template-columns: auto 1fr auto; /* Logo - Links - Actions */
