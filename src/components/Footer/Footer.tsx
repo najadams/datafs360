@@ -13,12 +13,7 @@ const Footer = () => {
         <div className={styles.brandColumn}>
            <Link href="/">
                 {/* Same logo SVG as Navbar but maybe different size/color if needed */}
-                <svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <text x="0" y="28" fill="#1C2B4B" fontSize="24" fontWeight="bold" fontFamily="var(--font-outfit)">DataF360</text>
-                     <path d="M130 10 C 135 5, 145 5, 150 10" stroke="#1C2B4B" strokeWidth="3" fill="none"/>
-                    <path d="M125 18 C 135 8, 155 8, 155 25" stroke="#1C2B4B" strokeWidth="3" fill="none"/>
-                     <circle cx="140" cy="20" r="2" fill="#0099FF"/>
-                </svg>
+                <img src="/DataF360 (Color).png" alt="DataF360" style={{ height: '40px', width: 'auto' }} />
             </Link>
         </div>
 
